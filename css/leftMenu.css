@@ -1,0 +1,62 @@
+#navigation-block  {
+  position: absolute;
+  z-index: 30;
+	top: 230px;
+}
+	
+ul#sliding-navigation {
+  width: 200px;
+	padding: 150px 0;
+	background: url(../images/bg-dop-menu.png) no-repeat center right;
+  background-size: 221px 100%;
+	-moz-background-size: 221px 100%;
+	-webkit-background-size: 221px 100%;
+	-khtml-background-size: 221px 100%;
+	list-style: none;
+}
+
+ul#sliding-navigation li.sliding-element {
+  overflow: hidden;
+  width: 150px;
+	height: 50px;
+  margin-bottom: 5px;
+}
+
+	ul#sliding-navigation li.sliding-element div {
+	  width:500px;
+	}
+
+	ul#sliding-navigation li.sliding-element a {
+	  display: block;
+	  float: left;
+	  clear: none;
+	  width: 80px;
+	  height: 30px;
+	  padding: 15px 10px 5px 60px;
+	  margin: 0 0 0 -150px;
+	  background: url(../images/dop-menu.png) no-repeat bottom left;
+	  color: #202826;
+	  border-radius: 0 5px 5px 0;
+	  -moz-border-radius: 0 5px 5px 0;
+		-webkit-border-radius: 0 5px 5px 0;
+		-khtml-border-radius: 0 5px 5px 0;
+		text-decoration: none;
+	}
+
+	ul#sliding-navigation li.sliding-element span {
+	  display: block;
+	  float: left;
+	  clear: none;
+	  width: 70px;
+	  height: 30px;
+	  padding: 15px 10px 5px 20px;
+	  margin: 0;
+	  background: url(../images/dop-menu.png) no-repeat -50px 0;
+	  color: #57d574;
+		border-radius: 0 5px 5px 0;
+	  -moz-border-radius: 0 5px 5px 0;
+		-webkit-border-radius: 0 5px 5px 0;
+		-khtml-border-radius: 0 5px 5px 0;
+		text-decoration: none;
+		text-transform: lowercase;
+	}

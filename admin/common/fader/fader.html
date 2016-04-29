@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JavaScript Color Fader</title>
+<link rel="stylesheet" type="text/css" href="fader.css" />
+<script type="text/javascript" src="fader.js"></script>
+</head>
+<body>
+<h2>Div Background Transition</h2>
+<div class="divs">
+  <div id="testdiv" onmouseover="colorFade('testdiv','background','ffffff','d8e6ee')" onmouseout="colorFade('testdiv','background','d8e6ee','ecf2f5',25,50)">First Div</div>
+  <div id="testdiv2" class="lower" onmouseover="colorFade('testdiv2','background','ffffff','d8e6ee')" onmouseout="colorFade('testdiv2','background','d8e6ee','ecf2f5',25,50)">Second Div</div>
+  <div id="testdiv3" class="lower" onmouseover="colorFade('testdiv3','background','ffffff','d8e6ee')" onmouseout="colorFade('testdiv3','background','d8e6ee','ecf2f5',25,50)">Third Div</div>
+</div>
+<h2>Div Background Transition - <a href="javascript:colorFade('testdiv7','background','ffffff','e4cdcd',50,15)">div one</a> | <a href="javascript:colorFade('testdiv8','background','ffffff','e4cdcd',50,15)">div two</a> | <a href="javascript:colorFade('testdiv9','background','ffffff','e4cdcd',50,15)">div three</a></h2>
+<div class="divs">
+  <div id="testdiv7">First Div</div>
+  <div id="testdiv8" class="lower">Second Div</div>
+  <div id="testdiv9" class="lower">Third Div</div>
+</div>
+<h2>Font Color Transition</h2>
+<div class="divs">
+  <div id="testdiv4" class="bold" onmouseover="colorFade('testdiv4','text','666666','c04040',50,20)" onmouseout="colorFade('testdiv4','text','c04040','399c31',25,40)">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+  <div id="testdiv5" class="lower bold" onmouseover="colorFade('testdiv5','text','666666','c04040',50,20)" onmouseout="colorFade('testdiv5','text','c04040','399c31',25,40)">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+  <div id="testdiv6" class="lower bold" onmouseover="colorFade('testdiv6','text','666666','c04040',50,20)" onmouseout="colorFade('testdiv6','text','c04040','399c31',25,40)">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+</div>
+<h2>Border Color Transition</h2>
+<div class="divs">
+  <div id="testdiv10" class="darkgrey" onmouseover="colorFade('testdiv10','border','8b8b8b','c04040',25,30)" onmouseout="colorFade('testdiv10','border','c04040','67afa0',25,30)">First Div</div>
+  <div id="testdiv11" class="darkgrey" onmouseover="colorFade('testdiv11','border','8b8b8b','c04040',25,30)" onmouseout="colorFade('testdiv11','border','c04040','67afa0',25,30)">Second Div</div>
+  <div id="testdiv12" class="darkgrey" onmouseover="colorFade('testdiv12','border','8b8b8b','c04040',25,30)" onmouseout="colorFade('testdiv12','border','c04040','67afa0',25,30)">Third Div</div>
+</div>
+</body>
+</html>

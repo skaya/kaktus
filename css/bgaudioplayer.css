@@ -1,0 +1,109 @@
+div.bgplayerui{ /* Audio player UI DIV */
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0 0 0 6px;
+  border-radius: 5px;
+  color: white;
+  position: absolute;
+  z-index: 50;
+  top: 100px;
+  left: -5px;
+}
+
+div.bgplayerui .play, div.bgplayerui .rewind { /* Audio player UI buttons style */
+cursor: pointer;
+}
+
+.play {
+  margin: 0 -20px -5px -14px;
+}
+
+.rewind {
+  margin: 0 -22px -6px -10px;
+}
+
+
+div.bgplayerui div.volume{ /* Volume control container */
+  display: inline-block;
+  height: 18px;
+  overflow: hidden;
+  padding: 9px 11px;
+  margin-left: -4px;
+  background: url(../images/bg-value.png) no-repeat center center;
+}
+
+.bgplayerui .volume div {
+  float: left;
+  width: 1px;
+  line-height: 100%;
+  margin-right: 1px;
+  background: #85a48f;
+  cursor: pointer;
+}
+
+.bgplayerui .volume div.vol10 {
+  height: 13px;
+  margin-top: 0px;
+}
+
+.bgplayerui .volume div.vol9 {
+  height: 12px;
+  margin-top: 1px;
+}
+
+.bgplayerui .volume div.vol8 {
+  height: 11px;
+  margin-top: 2px;
+}
+
+.bgplayerui .volume div.vol7 {
+  height: 10px;
+  margin-top: 3px;
+}
+
+.bgplayerui .volume div.vol6 {
+  height: 9px;
+  margin-top: 4px;
+}
+
+.bgplayerui .volume div.vol5 {
+  height: 8px;
+  margin-top: 5px;
+}
+
+.bgplayerui .volume div.vol4 {
+  height: 7px;
+  margin-top: 6px;
+}
+
+.bgplayerui .volume div.vol3 {
+  height: 6px;
+  margin-top: 7px;
+}
+
+.bgplayerui .volume div.vol2 {
+  height: 5px;
+  margin-top: 8px;
+}
+
+.bgplayerui .volume div.vol1 {
+  height: 4px;
+  margin-top: 9px;
+}
+
+div.bgplayerui div.volume div.on{ /* Style of volume bar when it's on */
+background: #00c669;
+}
+
+input[type=button]{
+-moz-transition: all 0.3s ease-in-out;
+ background:#f6dca3;
+ color:black;
+ border:double;
+ border-radius:0.5em;
+ box-shadow:0 0.2em 0.5em black;
+}
+
+input[type=button]:focus{
+border-color: darkred;
+background:#f5ca6e;
+}

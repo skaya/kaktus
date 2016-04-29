@@ -1,0 +1,1 @@
+{$page.menue}{if $page.menue==''}(без названия){/if}
