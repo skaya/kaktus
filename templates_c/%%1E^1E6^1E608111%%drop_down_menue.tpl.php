@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.12, created on 2016-06-06 20:52:40
+<?php /* Smarty version 2.6.12, created on 2016-06-06 23:56:29
          compiled from drop_down_menue.tpl */ ?>
 <?php $_from = $this->_tpl_vars['top_menue']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
     foreach ($_from as $this->_tpl_vars['item']):
@@ -30,7 +30,7 @@
 								</A>
 								<div class="info right"><div><span><span class="title"><?php echo $this->_tpl_vars['item2']['menue']; ?>
 </span><br/><br/><span class="desc"><?php echo $this->_tpl_vars['item2']['descr_page']; ?>
-</span><br/><span class="kol"><?php echo $this->_tpl_vars['item2']['kol']; ?>
+</span><br/><span class="kol"><?php echo $this->_tpl_vars['item2']['count']; ?>
  photos</span></span><br/><br/><?php echo $this->_tpl_vars['item2']['data_album']; ?>
 </div></div>
 				      </div>

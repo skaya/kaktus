@@ -20,11 +20,9 @@
   session_start();
 
   /** Smarty configuration */
-
   $smarty = new Smarty();
 
-  $smarty->debugging = true;
-  $smarty->error_reporting = E_ALL & ~E_NOTICE;
+  $smarty->debugging = false;
   $smarty->force_compile = true;
   $smarty->caching = false;
   $smarty->compile_check = true;

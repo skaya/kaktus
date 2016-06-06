@@ -321,31 +321,11 @@ $(window).resize(function() {
 	<div id="back-menu">&nbsp;</div>
 	<div id="menu-img" class=''>
 		<div id="menu-img-left">
-			<div class="ie-block">
-				<h3>OOOOOOOOOOOOOPS! С портфолио такая древность не справится... =( </h3>
-			</div>
 			<div id="menu-img-content">
 				{include file="drop_down_menue.tpl"}
 			</div>
     </div>
   </div>
-
-  <!--Define audio tag with source elements pointing to audio file (and fallback files)-->
-
-  <audio id="mybgplayer">
-    <source src="wedd2.mp3" type="audio/mpeg">
-    <source src="wedd2.ogg" type="audio/ogg">
-  </audio>
-
-  <!--Define corresponding audio interface. Certain CSS classes trigger changes to them-->
-
-  <div id="mybgplayerui" class="bgplayerui">
-
-    <img class="play" src="play.png" data-pausesrc="pause.png" />
-    <img class="rewind" src="start.png" />
-    <div class="volume"></div>
-  </div>
-
 
 
 	<div id="text">
@@ -354,7 +334,7 @@ $(window).resize(function() {
         <div class="container">
           <div class="content">
 						<h2>{$title}</h2>
-            {$content}
+            {$text}
 					</div>
 	    	</div>
         <div class="dragger_container">
@@ -371,25 +351,7 @@ $(window).resize(function() {
 
   {$selected_menue}
 
-  <div id="copyright">
-	<span>©</span> 2012 Профессиональный фотограф Конопацкая Юлия<br/><br/>
-	tel: (8033)303-00-06<br/>
-	г.Минск<br/><br/>
-
-    {$extra.footer}
-	{literal}
-		<!--LiveInternet counter--><script type="text/javascript"><!--
-		document.write("<a href='http://www.liveinternet.ru/click' "+
-		"target=_blank><img src='//counter.yadro.ru/hit?t50.6;r"+
-		escape(document.referrer)+((typeof(screen)=="undefined")?"":
-		";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-		screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-		";"+Math.random()+
-		"' alt='' title='LiveInternet' "+
-		"border='0' width='31' height='31'><\/a>")
-		//--></script><!--/LiveInternet-->
-	{/literal}
-  </div>
+  <div id="copyright">{$extra.footer}</div>
 
 </div>
 

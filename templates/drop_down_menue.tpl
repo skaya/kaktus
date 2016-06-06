@@ -13,7 +13,7 @@
 								<A class="img" id="{$item2.id}" href="{if $item.array[item2].symlink==1} {$item2.link} {else} page-{$item2.id}-{$lang}.html{/if}" title="{$item2.title}">
 									<div class="bgPhoto"></div><img src="{$item2.icon}"/>
 								</A>
-								<div class="info right"><div><span><span class="title">{$item2.menue}</span><br/><br/><span class="desc">{$item2.descr_page}</span><br/><span class="kol">{$item2.kol} photos</span></span><br/><br/>{$item2.data_album}</div></div>
+								<div class="info right"><div><span><span class="title">{$item2.menue}</span><br/><br/><span class="desc">{$item2.descr_page}</span><br/><span class="kol">{$item2.count} photos</span></span><br/><br/>{$item2.data_album}</div></div>
 				      </div>
 						{/foreach}
 

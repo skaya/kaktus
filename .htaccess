@@ -6,9 +6,6 @@ RewriteEngine on
 AddDefaultCharset utf-8
 
 RewriteBase /kaktus/
-RewriteRule ^(.*)portfolio-(.*)-(.*)\.html$ $1portfolio.php?issue_id=$2
-RewriteRule ^(.*)-(.*)-(.*)-(.*)\.html$ $1.php?action=$2&id=$3
-RewriteRule ^(.*)-(.*)-(.*)\.html$ $1.php?issue_id=$2
-RewriteRule ^(.*)-(.*)\.html$ $1.php?
-
+RewriteRule ^(.*)page-(.*)\.html$ $1page.php?issue_id=$2
+RewriteRule ^(.*)portfolio-(.*)\.html$ $1portfolio.php?issue_id=$2
 RewriteRule ^(.*)\.html$ $1.php

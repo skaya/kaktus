@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.12, created on 2016-06-06 20:52:40
+<?php /* Smarty version 2.6.12, created on 2016-06-06 23:56:29
          compiled from page.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -324,9 +324,6 @@ $(window).resize(function() {
 	<div id="back-menu">&nbsp;</div>
 	<div id="menu-img" class=''>
 		<div id="menu-img-left">
-			<div class="ie-block">
-				<h3>OOOOOOOOOOOOOPS! С портфолио такая древность не справится... =( </h3>
-			</div>
 			<div id="menu-img-content">
 				<?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "drop_down_menue.tpl", 'smarty_include_vars' => array()));
@@ -337,23 +334,6 @@ unset($_smarty_tpl_vars);
     </div>
   </div>
 
-  <!--Define audio tag with source elements pointing to audio file (and fallback files)-->
-
-  <audio id="mybgplayer">
-    <source src="wedd2.mp3" type="audio/mpeg">
-    <source src="wedd2.ogg" type="audio/ogg">
-  </audio>
-
-  <!--Define corresponding audio interface. Certain CSS classes trigger changes to them-->
-
-  <div id="mybgplayerui" class="bgplayerui">
-
-    <img class="play" src="play.png" data-pausesrc="pause.png" />
-    <img class="rewind" src="start.png" />
-    <div class="volume"></div>
-  </div>
-
-
 
 	<div id="text">
 		<div id="mcs_container">
@@ -362,7 +342,7 @@ unset($_smarty_tpl_vars);
           <div class="content">
 						<h2><?php echo $this->_tpl_vars['title']; ?>
 </h2>
-            <?php echo $this->_tpl_vars['content']; ?>
+            <?php echo $this->_tpl_vars['text']; ?>
 
 					</div>
 	    	</div>
@@ -385,27 +365,8 @@ unset($_smarty_tpl_vars);
   <?php echo $this->_tpl_vars['selected_menue']; ?>
 
 
-  <div id="copyright">
-	<span>©</span> 2012 Профессиональный фотограф Конопацкая Юлия<br/><br/>
-	tel: (8033)303-00-06<br/>
-	г.Минск<br/><br/>
-
-    <?php echo $this->_tpl_vars['extra']['footer']; ?>
-
-	<?php echo '
-		<!--LiveInternet counter--><script type="text/javascript"><!--
-		document.write("<a href=\'http://www.liveinternet.ru/click\' "+
-		"target=_blank><img src=\'//counter.yadro.ru/hit?t50.6;r"+
-		escape(document.referrer)+((typeof(screen)=="undefined")?"":
-		";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-		screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-		";"+Math.random()+
-		"\' alt=\'\' title=\'LiveInternet\' "+
-		"border=\'0\' width=\'31\' height=\'31\'><\\/a>")
-		//--></script><!--/LiveInternet-->
-	'; ?>
-
-  </div>
+  <div id="copyright"><?php echo $this->_tpl_vars['extra']['footer']; ?>
+</div>
 
 </div>
 
