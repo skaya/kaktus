@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.12, created on 2015-11-24 01:02:29
+<?php /* Smarty version 2.6.12, created on 2016-06-06 20:52:40
          compiled from page.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -353,21 +353,6 @@ unset($_smarty_tpl_vars);
     <div class="volume"></div>
   </div>
 
-  <?php echo '
-  <script>
-    var playerinstance=bgaudioplayer({
-      audioid: \'mybgplayer\', // id of audio element
-      audiointerface: \'mybgplayerui\', // id of corresponding UI div
-      autoplay: true, // auto play music?
-      persistTimeLine: false, // Persist player\'s current timeline/ volume when moving from page to page?
-      volume: 0.5, // Default volume (0.0 to 1.0)
-      volumelevels: 10 // # of volume bars to show in UI
-    })
-
-
-
-  </script>
-  '; ?>
 
 
 	<div id="text">
@@ -390,21 +375,6 @@ unset($_smarty_tpl_vars);
     </div>
   </div>
 
-  <!-- <div id="slideshow">
-    <div class="inner-slideshow">
-      <ul>
-        <li><img src="Image/1.jpg" /></li>
-        <li><img src="Image/2.jpg" /></li>
-        <li><img src="Image/3.jpg" /></li>
-        <li><img src="Image/4.jpg" /></li>
-        <li><img src="Image/5.jpg" /></li>
-        <li><img src="Image/6.jpg" /></li>
-        <li><img src="Image/7.jpg" /></li>
-        <li><img src="Image/8.jpg" /></li>
-        <li><img src="Image/9.jpg" /></li>
-      </ul>
-    </div>
-  </div> -->
 
   <div id="contactable"><?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "contact.tpl", 'smarty_include_vars' => array()));

@@ -346,21 +346,7 @@ $(window).resize(function() {
     <div class="volume"></div>
   </div>
 
-  {literal}
-  <script>
-    var playerinstance=bgaudioplayer({
-      audioid: 'mybgplayer', // id of audio element
-      audiointerface: 'mybgplayerui', // id of corresponding UI div
-      autoplay: true, // auto play music?
-      persistTimeLine: false, // Persist player's current timeline/ volume when moving from page to page?
-      volume: 0.5, // Default volume (0.0 to 1.0)
-      volumelevels: 10 // # of volume bars to show in UI
-    })
 
-
-
-  </script>
-  {/literal}
 
 	<div id="text">
 		<div id="mcs_container">
@@ -380,21 +366,6 @@ $(window).resize(function() {
     </div>
   </div>
 
-  <!-- <div id="slideshow">
-    <div class="inner-slideshow">
-      <ul>
-        <li><img src="Image/1.jpg" /></li>
-        <li><img src="Image/2.jpg" /></li>
-        <li><img src="Image/3.jpg" /></li>
-        <li><img src="Image/4.jpg" /></li>
-        <li><img src="Image/5.jpg" /></li>
-        <li><img src="Image/6.jpg" /></li>
-        <li><img src="Image/7.jpg" /></li>
-        <li><img src="Image/8.jpg" /></li>
-        <li><img src="Image/9.jpg" /></li>
-      </ul>
-    </div>
-  </div> -->
 
   <div id="contactable">{include file=contact.tpl"}</div>
 

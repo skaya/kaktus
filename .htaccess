@@ -5,11 +5,10 @@ RewriteEngine on
 
 AddDefaultCharset utf-8
 
-RewriteBase /kaktus2013/
-RewriteRule ^(.*)portfolio-(.*)-(.*)\.html$ $1portfolio.php?issue_id=$2&lang=$3
-RewriteRule ^(.*)-(.*)-(.*)-(.*)\.html$ $1.php?action=$2&id=$3&lang=$4
-RewriteRule ^(.*)-(.*)-(.*)\.html$ $1.php?issue_id=$2&lang=$3
-RewriteRule ^(.*)lang-(.*)$ $1?lang=$2
-RewriteRule ^(.*)-(.*)\.html$ $1.php?&lang=$2
+RewriteBase /kaktus/
+RewriteRule ^(.*)portfolio-(.*)-(.*)\.html$ $1portfolio.php?issue_id=$2
+RewriteRule ^(.*)-(.*)-(.*)-(.*)\.html$ $1.php?action=$2&id=$3
+RewriteRule ^(.*)-(.*)-(.*)\.html$ $1.php?issue_id=$2
+RewriteRule ^(.*)-(.*)\.html$ $1.php?
 
 RewriteRule ^(.*)\.html$ $1.php

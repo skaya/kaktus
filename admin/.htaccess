@@ -1,8 +1,0 @@
-Options +FollowSymLinks
-DirectoryIndex index.php
-RewriteEngine off
-
-
-AddDefaultCharset utf-8
-
-
