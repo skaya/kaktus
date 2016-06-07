@@ -1,0 +1,67 @@
+form {
+    color: #33cc66;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+label.inline-label {
+    display: inline-block;
+    min-width: 70px;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.form-field {
+    margin: 10px 0;
+}
+
+.required-label {
+    font-size: 11px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 20px;
+    background: #469b5a;
+    border: 0;
+    padding: 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px #000 inset;
+}
+
+textarea {
+    min-height: 80px;
+}
+
+input.input-inline {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+input.input-short {
+    width: 100px;
+}
+
+button, input[type="submit"] {
+    background: #23442f;
+    color: #2fbd5b;
+    font-size: 14px;
+    border: 1px solid #469b5a;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    min-width: 100px;
+    box-shadow: 0px 0px 15px #000;
+    cursor: pointer;
+}
+
+.captcha-img {
+    display: inline-block;
+}

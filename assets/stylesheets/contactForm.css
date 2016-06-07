@@ -1,0 +1,39 @@
+.contactForm {
+	overflow: hidden;
+	position: absolute;
+	z-index: 40;
+	top: 202px;
+	right: 0;
+}
+
+.contactForm__toggle-link {
+	background-color: #000000;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 5px 10px;
+	float: right;
+}
+
+.contactForm__inner {
+	width: 800px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 0 400px 0 400px;
+	padding: 10px 300px 10px 180px;
+	box-sizing: border-box;
+	position: relative;
+	right: -230px;
+}
+
+.contactForm__form {
+}
+
+.contactForm__required-label {
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+
+.contactForm__btn {
+	position: relative;
+	left: 95px;
+}
