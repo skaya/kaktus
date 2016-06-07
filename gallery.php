@@ -4,7 +4,7 @@ require("common/common.php");
 if (isset($_REQUEST['issue_id']) && $_REQUEST['issue_id'] != '') {
   $page_row = $DB->query("SELECT id, title, content, parent_id, icon, menue, main, active FROM pages WHERE id=".$_REQUEST['issue_id']." and active=1");
 
-  $image_row = $DB->query("select pictures.id, pictures.picture_origin, pictures.picture, pictures.picture_sm, pictures.name, pictures_to_pages.rank from pictures left join pictures_to_pages on pictures.id=pictures_to_pages.obj_id where pictures_to_pages.page_id=".$_REQUEST['issue_id']." order by pictures.rank");
+  $image_row = $DB->query("select pictures.id, pictures.picture, pictures.name, pictures_to_pages.rank from pictures left join pictures_to_pages on pictures.id=pictures_to_pages.obj_id where pictures_to_pages.page_id=".$_REQUEST['issue_id']." order by pictures.rank");
 }
 
 $page = $page_row -> fetch_assoc();

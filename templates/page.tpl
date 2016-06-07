@@ -33,16 +33,9 @@
 <div id="bg-right"></div>
 <div id="loading_page"></div>
 <div id="bg-img">
-	<div id="back-menu">&nbsp;</div>
-	<div id="menu-img">
-		<div id="menu-img-left">
-			<div id="menu-img-content">
-				{include file="drop_down_menue.tpl"}
-			</div>
-        </div>
+    <div class="top-navigation">
+	   {include file="drop_down_menue.tpl"}
     </div>
-
-
 
     <div class="textContent content">
         <div class="textContent__inner">
@@ -51,16 +44,11 @@
 	    </div>
     </div>
 
-
-
     <div class="sidebar-navigation">
         {$selected_menue}
     </div>
 
-
     {$contact_form}
-
-
 
     <div id="copyright">{$extra.footer}</div>
 </div>

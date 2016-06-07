@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -117,46 +117,7 @@ body.gallery, .gallery #bg-left, .gallery #bg-img, .gallery #bg-right{
   font-size: 13px;
   color: #57D574;
 }
-/***top menu***/
-#back-menu {
-	 z-index: 30;
-	 height: 195px;
-	 width: 1202px;
-	 margin: 0 auto -195px auto;
-	 background: url(../images/menu-back.png) no-repeat top center;
-}
 
-#menu-img {
-  z-index: 40;
-	width: 900px;
-  height: 50px;
-  margin: 0 auto 100px auto;
-  padding: 0 51px 0 0;
-  background: url(../images/menu-bg-right2.png) no-repeat top right;
-}
-
-#menu-img-left {
-	position: absolute;
-  width: 850px;
-  height: 50px;
-  padding: 0 0 0 50px;
-  background: url(../images/menu-bg-left2.png) no-repeat top left;
-  border: 0px solid red;
-}
-
-#menu-img-content {
-  float: left;
-	overflow: hidden;
-	position: relative;
-  z-index: 40;
-  width: 900px;
-	height: 0;
-  border: 0px solid blue;
-}
-
-#menu-img.zindex, #menu-img.zindex  #menu-img-content {
-	z-index: 60;
-}
 
 #loading_page {
   position: fixed;
@@ -204,6 +165,47 @@ body.gallery, .gallery #bg-left, .gallery #bg-img, .gallery #bg-right{
 
 #slideshow img {
   position: relative;
+}
+
+/*==============top menu=============*/
+.top-navigation {
+  margin: 0 auto 100px;
+  z-index: 30;
+  width: 900px;
+}
+
+/*==============portfolio menu=============*/
+.portfolio-menu {
+   height: 50px;
+   padding: 0 50px;
+   background: rgba(0, 0, 0, 0.5);
+   border-radius: 0 50px;
+}
+
+.portfolio-menu__item {
+  float: left;
+  clear: none;
+  width: 25%;
+  height: 50px;
+  padding: 15px 0;
+  box-sizing: border-box;
+  text-align: center;
+  list-style: none;
+  color: #33cc66;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/*==============sidebar menu=============*/
+.sidebar-navigation  {
+  position: absolute;
+  z-index: 30;
+  top: 0px;
+  background-image: -webkit-radial-gradient(50% 50%, closest-side, #43b05c 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+  background-image: radial-gradient(closest-side at 50% 50%, #43b05c 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
 }
 
 /*==============copyright=============*/

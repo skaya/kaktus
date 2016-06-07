@@ -15,7 +15,7 @@
 						<div class="content-img">
 						<a href="#">
 							<div class="bgThamb"></div>
-							<img src="{$photo[i].picture_sm}" alt="{$photo[i].picture_origin}" class="thumb" />
+							<img src="{$photo[i].picture}" alt="images/origin/{$photo[i].picture}" class="thumb" />
 						</a>
 						</div>
 					</div>
