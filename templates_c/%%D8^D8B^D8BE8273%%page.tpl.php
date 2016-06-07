@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.12, created on 2016-06-07 07:01:27
+<?php /* Smarty version 2.6.12, created on 2016-06-07 08:02:20
          compiled from page.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -69,6 +69,8 @@ unset($_smarty_tpl_vars);
 
 
 <div id="copyright"><?php echo $this->_tpl_vars['extra']['footer']; ?>
+</div>
+<div id="copyright2"><?php echo $this->_tpl_vars['extra']['footer']; ?>
 </div>
 
 </body>

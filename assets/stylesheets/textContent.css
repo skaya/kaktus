@@ -15,6 +15,7 @@
     height: 250px;
     line-height: 15px;
     color: #328f49;
+    font-family: Futura, Arial;
     overflow: auto;
     padding-right: 20px;
 }
