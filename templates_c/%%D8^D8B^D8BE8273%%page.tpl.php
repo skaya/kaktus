@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.12, created on 2016-06-07 06:09:10
+<?php /* Smarty version 2.6.12, created on 2016-06-07 07:01:27
          compiled from page.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -19,6 +19,8 @@
 
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/form.css" />
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/contactForm.css" />
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/textContent.css" />
+
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/leftMenu.css" />
     <link rel="Stylesheet" type="text/css" href="assets/stylesheets/menuPhotoAnimate.css" />
     <link rel="Stylesheet" type="text/css" href="assets/stylesheets/all.css" />
@@ -29,54 +31,45 @@
     <![endif]-->
 </head>
 <body>
-    <div id="bg-left"></div>
-    <div id="bg-right"></div>
-    <div id="loading_page"></div>
-    <div id="bg-img">
-    	<div id="back-menu">&nbsp;</div>
-    	<div id="menu-img" class=''>
-    		<div id="menu-img-left">
-    			<div id="menu-img-content">
-    				<?php $_smarty_tpl_vars = $this->_tpl_vars;
+<div id="bg-left"></div>
+<div id="bg-right"></div>
+<div id="loading_page"></div>
+<div id="bg-img">
+	<div id="back-menu">&nbsp;</div>
+	<div id="menu-img" class=''>
+		<div id="menu-img-left">
+			<div id="menu-img-content">
+				<?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "drop_down_menue.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
-    			</div>
+			</div>
         </div>
-      </div>
-
-
-    	<div id="text">
-    		<div id="mcs_container">
-          <div class="customScrollBox">
-            <div class="container">
-              <div class="content">
-    						<h2><?php echo $this->_tpl_vars['title']; ?>
-</h2>
-                <?php echo $this->_tpl_vars['text']; ?>
-
-    					</div>
-    	    	</div>
-            <div class="dragger_container">
-              <div class="dragger"></div>
-            </div>
-          </div>
-          <a href="#" class="scrollUpBtn"></a>
-    			<a href="#" class="scrollDownBtn"></a>
-        </div>
-      </div>
-
-
-      <div id="contactable"><?php echo $this->_tpl_vars['contact_form']; ?>
-</div>
-
-      <?php echo $this->_tpl_vars['selected_menue']; ?>
-
-
-      <div id="copyright"><?php echo $this->_tpl_vars['extra']['footer']; ?>
-</div>
-
     </div>
+
+
+
+    <div class="textContent content">
+        <div class="textContent__inner">
+            <h2><?php echo $this->_tpl_vars['title']; ?>
+</h2>
+            <?php echo $this->_tpl_vars['text']; ?>
+
+	    </div>
+    </div>
+
+</div>
+
+
+<?php echo $this->_tpl_vars['contact_form']; ?>
+
+
+<?php echo $this->_tpl_vars['selected_menue']; ?>
+
+
+<div id="copyright"><?php echo $this->_tpl_vars['extra']['footer']; ?>
+</div>
+
 </body>
 </html>

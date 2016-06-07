@@ -4,6 +4,7 @@
 	z-index: 40;
 	top: 202px;
 	right: 0;
+	display: none;
 }
 
 .contactForm__toggle-link {

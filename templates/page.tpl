@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/form.css" />
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/contactForm.css" />
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/textContent.css" />
+
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/leftMenu.css" />
     <link rel="Stylesheet" type="text/css" href="assets/stylesheets/menuPhotoAnimate.css" />
     <link rel="Stylesheet" type="text/css" href="assets/stylesheets/all.css" />
@@ -27,45 +29,36 @@
     <![endif]-->
 </head>
 <body>
-    <div id="bg-left"></div>
-    <div id="bg-right"></div>
-    <div id="loading_page"></div>
-    <div id="bg-img">
-    	<div id="back-menu">&nbsp;</div>
-    	<div id="menu-img" class=''>
-    		<div id="menu-img-left">
-    			<div id="menu-img-content">
-    				{include file="drop_down_menue.tpl"}
-    			</div>
+<div id="bg-left"></div>
+<div id="bg-right"></div>
+<div id="loading_page"></div>
+<div id="bg-img">
+	<div id="back-menu">&nbsp;</div>
+	<div id="menu-img" class=''>
+		<div id="menu-img-left">
+			<div id="menu-img-content">
+				{include file="drop_down_menue.tpl"}
+			</div>
         </div>
-      </div>
-
-
-    	<div id="text">
-    		<div id="mcs_container">
-          <div class="customScrollBox">
-            <div class="container">
-              <div class="content">
-    						<h2>{$title}</h2>
-                {$text}
-    					</div>
-    	    	</div>
-            <div class="dragger_container">
-              <div class="dragger"></div>
-            </div>
-          </div>
-          <a href="#" class="scrollUpBtn"></a>
-    			<a href="#" class="scrollDownBtn"></a>
-        </div>
-      </div>
-
-
-      <div id="contactable">{$contact_form}</div>
-
-      {$selected_menue}
-
-      <div id="copyright">{$extra.footer}</div>
-
     </div>
+
+
+
+    <div class="textContent content">
+        <div class="textContent__inner">
+            <h2>{$title}</h2>
+            {$text}
+	    </div>
+    </div>
+
+</div>
+
+
+{$contact_form}
+
+{$selected_menue}
+
+<div id="copyright">{$extra.footer}</div>
+
 </body>
 </html>

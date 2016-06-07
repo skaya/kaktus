@@ -94,12 +94,8 @@ body.gallery, .gallery #bg-left, .gallery #bg-img, .gallery #bg-right{
   min-height: 0;
 }
 
-.content {
-  line-height: 15px;
-}
-
 .content h2 {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .content a {
@@ -180,21 +176,7 @@ body.gallery, .gallery #bg-left, .gallery #bg-img, .gallery #bg-right{
   -khtml-opacity: 0.7;
 }
 
-#text {
-	position: relative;
-	z-index: 41;
-	width: 50%;
-	min-width: 600px;
-  max-width: 900px;
-	height: 300px;
-	margin: 0 auto;
-	background: url(../images/bg-text.png) repeat;
-	color: #328f49;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-khtml-border-radius: 10px;
-}
+
 
 #slideshow {
   background: url(../images/bg-text.png) repeat;
@@ -221,20 +203,6 @@ body.gallery, .gallery #bg-left, .gallery #bg-img, .gallery #bg-right{
 
 #slideshow img {
   position: relative;
-}
-
-#text {
-  position: relative;
-  z-index: 41;
-  width: 50%;
-  height: 300px;
-  margin: 0 auto;
-  background: url(../images/bg-text.png) repeat;
-  color: #328f49;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -khtml-border-radius: 10px;
 }
 
 /*copyright*/
