@@ -174,31 +174,6 @@ body.gallery, .gallery #bg-left, .gallery #bg-img, .gallery #bg-right{
   width: 900px;
 }
 
-/*==============portfolio menu=============*/
-.portfolio-menu {
-   height: 50px;
-   padding: 0 50px;
-   background: rgba(0, 0, 0, 0.5);
-   border-radius: 0 50px;
-}
-
-.portfolio-menu__item {
-  float: left;
-  clear: none;
-  width: 25%;
-  height: 50px;
-  padding: 15px 0;
-  box-sizing: border-box;
-  text-align: center;
-  list-style: none;
-  color: #33cc66;
-  line-height: 20px;
-  font-size: 12px;
-  font-weight: normal;
-  text-transform: uppercase;
-  position: relative;
-}
-
 /*==============sidebar menu=============*/
 .sidebar-navigation  {
   position: absolute;
