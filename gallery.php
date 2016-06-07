@@ -1,5 +1,5 @@
 <?php
-require("common/common_scripts.php");
+require("common/common.php");
 
 if (isset($_REQUEST['issue_id']) && $_REQUEST['issue_id'] != '') {
   $page_row = $DB->query("SELECT id, title, content, parent_id, icon, menue, main, active FROM pages WHERE id=".$_REQUEST['issue_id']." and active=1");
@@ -8,7 +8,6 @@ if (isset($_REQUEST['issue_id']) && $_REQUEST['issue_id'] != '') {
 }
 
 $page = $page_row -> fetch_assoc();
-
 $images=array();
 while($image = $image_row -> fetch_assoc()) {
   array_push($images, $image);

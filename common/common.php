@@ -14,6 +14,8 @@ while ($row = $query -> fetch_assoc()){
 
 $smarty->assign('extra',$extras);
 
+require("selected_menue.php");
+require("drop_down_menue.php");
 
 
 ?>
