@@ -24,16 +24,10 @@
     position: relative;
 }
 
-/*.scrollable-dropdown-menu__item:hover .scrollable-dropdown-menu__dropdown-container {
-    display: block;
-}*/
-
 .scrollable-dropdown-menu__item:hover .scrollable-dropdown-menu__scrollable-item {
     margin-top: 0px;
-
     transition: margin-top 500ms;
     -webkit-transition: margin-top 500ms;
-
 }
 
 .scrollable-dropdown-menu__dropdown-container {

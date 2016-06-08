@@ -1,9 +1,8 @@
 $(window).on('load', function(){
   menuPhotoAnimate();
-  $('.sub-menu').css({opacity: 1});    
 });
 
-function menuPhotoAnimate(){  
+function menuPhotoAnimate(){
   var wH = $(window).height();
   var wW = $(window).width();
   //alert(wH);
@@ -12,43 +11,43 @@ function menuPhotoAnimate(){
   var wTramb = 210;
   var hTramb = 140;
   var $menu, $menuW, $itemX, $itemW;
-   
+
   $('#menu-img-content, .scrollWrapper').height(wH);
   $menuW = $('#menu-img-content').width();
   $itemX = (wW - $menuW)/2;
   $itemW = $menuW/5;
-  
+
   $('.info div').hide();
-  $('.bgPhotos').hide().css({width: wTrambSm+40+'px'});	
+  $('.bgPhotos').hide().css({width: wTrambSm+40+'px'});
 
   //test
   //$('.bgPhotos').show();
-  
+
   $('.sub-menu').each(function(j, vals) {
-    $menu = "#"+$(this).attr('id');	
+    $menu = "#"+$(this).attr('id');
 	  $($menu+' .imgBlock').each(function(i, val) {
-	    $(this).css({top: -hTramb*i+'px', opacity: 0, width: wTrambSm+40+'px'});		  
+	    $(this).css({top: -hTramb*i+'px', opacity: 0, width: wTrambSm+40+'px'});
 	  });
   });
   $('.imgBlock').css({top: -wH+'px', width: wTrambSm+40+'px'});
-  $('.img, .bgPhoto').css({width: wTrambSm+'px', height: hTrambSm+'px'});	
-    
+  $('.img, .bgPhoto').css({width: wTrambSm+'px', height: hTrambSm+'px'});
+
   $('.sub-menu').hover(
     function(){
 		$('#menu-img').addClass('zindex');
 	  $menu = "#"+$(this).attr('id');
 	  $('.info').hide();
 	  $($menu+' .bgPhoto').css({opacity: 1});
-	  $($menu+' .bgPhotos').show();	
+	  $($menu+' .bgPhotos').show();
 	  $($menu+' .imgBlock').stop(true).animate({top: 0+'px', opacity: 1}, 800,  function(){
-	    var $this = $(this); 
+	    var $this = $(this);
 		  $this.children('.img').stop(true).animate({width: wTrambSm+'px', height: hTrambSm+'px'});
 	    $this.children('.bgPhoto').stop(true).animate({opacity: 1});
 	  });
-		
+
     $('div#menu-img-content').mouseGallerySlide({
       scrollElParent: $menu+' .scrollableArea',
-      scrollEl: $menu+' .imgBlock' 
+      scrollEl: $menu+' .imgBlock'
     });
 
 	  $($menu+' .img').hover(
@@ -71,12 +70,12 @@ function menuPhotoAnimate(){
 	},
 	function () {
 		$('#menu-img').removeClass('zindex');
-	  $menu = "#"+$(this).attr('id');	   
+	  $menu = "#"+$(this).attr('id');
 	  $($menu+' .imgBlock').each(function(i, val) {
 			$(this).animate({top: -hTramb*i+'px', opacity: 0}, 1000, function(){
 				$(this).children('.bgPhoto').css({opacity: 1});
 				$(this).parents(".bgPhotos").hide();
-			});		  
-	  }); 
+			});
+	  });
 	});
 }
