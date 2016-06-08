@@ -24,14 +24,26 @@
     position: relative;
 }
 
+.scrollable-dropdown-menu__item:hover .scrollable-dropdown-menu__dropdown-container {
+    display: block;
+}
+
+.scrollable-dropdown-menu__item:hover .scrollable-dropdown-menu__scrollable-item {
+    position: relative;
+    top: auto;
+    transition: all 200ms;
+
+}
+
 .scrollable-dropdown-menu__dropdown-container {
     position: relative;
     z-index: 45;
     margin-top: -35px; /* it's menu width. it's needed to start droping down from begining of a page */
-    /*add shadow*/
-    background: url(../images/bg-photos-sm.png) repeat-y center;
-    width: auto !important;
-    display: block !important;
+    width: auto;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+    display: none;
 }
 
 .scrollable-dropdown-menu__dropdown-container:hover {
@@ -58,10 +70,14 @@
 
 .scrollable-dropdown-menu__scrollable-item {
     position: relative;
-    width: auto !important;
+    width: auto;
     margin: 0 15px; /* it's needed to scaling effect without shifting and else.
                         the margin will be removed during animation.
                         the image width will be increased because of it has 100% width  */
+    /* hover off effect */
+    -webkit-transition: margin 50ms;
+    transition: margin 50ms;
+
 }
 
 .scrollable-dropdown-menu__scrollable-item:hover {
@@ -72,17 +88,17 @@
 
 .scrollable-dropdown-menu__icon-container {
     display: block;
-    width: auto !important;
-    height: auto !important;
 }
 
-.scrollable-dropdown-menu__icon-container:before {
+.scrollable-dropdown-menu__icon-container:before { /* decorative stripped cover for unhovered photos */
+    content: "";
     position: absolute;
+    display: block;
     z-index: 22;
-    /*add shadow*/
-    background: url(../images/bg-photo-sm-180px.png) repeat-y;
-    height: 100% !important;
-    width: 100% !important;
+    background-image: -webkit-repeating-linear-gradient(left, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2) 2px);
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4) inset;
+    height: 100%;
+    width: 100%;
 }
 
 .scrollable-dropdown-menu__scrollable-item:hover .scrollable-dropdown-menu__icon-container:before {
@@ -107,7 +123,7 @@
     background: #000;
 }
 
-.scrollable-dropdown-menu__text-container div {
+.scrollable-dropdown-menu__text {
     margin: 20px 20px 0;
     padding: 3px 10px;
     text-align: left;
@@ -116,7 +132,6 @@
     border-left: 5px solid #33CC66;
     text-transform: none;
     font-family: Helvetica;
-    display: block !important;
     opacity: 0;
 }
 

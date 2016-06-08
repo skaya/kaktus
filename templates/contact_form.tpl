@@ -1,5 +1,5 @@
-<div class="contact-form">
-	<div class="contact-form__inner clearfix">
+<div class="contact-form js--contact-form">
+	<div class="contact-form__inner clearfix" id="contact-form-container">
 		<form id="contact-form" class="contact-form__form" name="add_msg" method="post" action="contact.php">
 			<span class="required-label contact-form__required-label">*all field are required</span>
 			<div class="messages error {if $success==1}success{/if}">
@@ -32,5 +32,5 @@
 			</div>
 		</form>
 	</div>
-	<div class="contact-form__toggle-link">CONTACT</div>
+	<a href="#" class="contact-form__toggle-link js--show-contact-form">CONTACT</a>
 </div>

@@ -1,5 +1,6 @@
 .article-menu {
-	  width: 200px;
+	  width: 170px;
+    overflow: hidden;
   	padding: 150px 0;
 	  list-style: none;
 }
@@ -7,9 +8,19 @@
 .article-menu__item {
   	overflow: hidden;
   	width: 290px;
-	  height: 45px;
+	  height: 50px;
+    margin-left: -170px;
   	margin-bottom: 5px;
   	cursor: pointer;
+    /* hover off effect */
+    -webkit-transition: margin-left 100ms;
+    transition: margin-left 100ms;
+}
+
+.article-menu__item:hover {
+  margin-left: 0;
+  -webkit-transition: margin-left 200ms;
+  transition: margin-left 200ms;
 }
 
 .article-menu__item:before { /* decorative item */
@@ -18,7 +29,7 @@
     float: left;
     clear: none;
     width: 45px;
-    height: 45px;
+    height: 50px;
     background-image: -webkit-linear-gradient(right, rgba(93, 255, 128, 0.5), rgba(93, 255, 128, 0));
 }
 
@@ -29,9 +40,9 @@
     float: right;
     clear: none;
     width: 120px;
-    height: 45px;
+    height: 50px;
     padding: 10px 10px 10px 20px;
-    line-height: 25px;
+    line-height: 30px;
     margin: 0;
     background-color: rgba(93, 255, 128, 0.5);
     color: #202826;
@@ -44,9 +55,9 @@
     float: right;
     clear: none;
     width: 120px;
-    height: 45px;
+    height: 50px;
     padding: 10px 10px 10px 20px;
-    line-height: 25px;
+    line-height: 30px;
     margin: 0;
   	background: rgba(0, 0, 0, 0.4);
   	border-radius: 0 5px 5px 0;

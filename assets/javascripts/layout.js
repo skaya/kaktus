@@ -14,6 +14,11 @@ $(window).load(function(){
       }
     }
 
+    $('.js--show-contact-form').on('click', function(event) {
+      event.preventDefault();
+      $('.js--contact-form').addClass('opened');
+
+    })
 
 
     // $('#slideshow img').animate({top: -300+'px'}, 15000, 'linear').animate({top: -600+'px', opacity: 0.2}, 15000, 'linear');
