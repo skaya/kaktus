@@ -24,14 +24,15 @@
     position: relative;
 }
 
-.scrollable-dropdown-menu__item:hover .scrollable-dropdown-menu__dropdown-container {
+/*.scrollable-dropdown-menu__item:hover .scrollable-dropdown-menu__dropdown-container {
     display: block;
-}
+}*/
 
 .scrollable-dropdown-menu__item:hover .scrollable-dropdown-menu__scrollable-item {
-    position: relative;
-    top: auto;
-    transition: all 200ms;
+    margin-top: 0px;
+
+    transition: margin-top 500ms;
+    -webkit-transition: margin-top 500ms;
 
 }
 
@@ -43,7 +44,7 @@
     display: block;
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
-    display: none;
+    display: block;
 }
 
 .scrollable-dropdown-menu__dropdown-container:hover {
@@ -53,37 +54,40 @@
 .scrollable-dropdown-menu__dropdown-container:before { /* area for top scrolling on hover action */
     content: "";
     display: block;
-    position: absolute;
+    position: relative;
     z-index: 300;
     width: 100%;
     height: 50px;
     top: 0;
     left: 0;
-    border: 1px solid red;
+    border: 0px solid red;
 }
 
 .scrollable-dropdown-menu__scrollable-wrapper {
     position: relative;
     overflow: visible;
     z-index: 30;
+    margin-top: -60px;
 }
 
 .scrollable-dropdown-menu__scrollable-item {
     position: relative;
+    top: 0;
     width: auto;
     margin: 0 15px; /* it's needed to scaling effect without shifting and else.
                         the margin will be removed during animation.
                         the image width will be increased because of it has 100% width  */
     /* hover off effect */
-    -webkit-transition: margin 50ms;
-    transition: margin 50ms;
+    margin-top: -200px;
+    -webkit-transition: margin-top 50ms;
+    transition: margin-top 50ms;
 
 }
 
 .scrollable-dropdown-menu__scrollable-item:hover {
     margin: 0; /* smooth removing of margins for smooth increasing of width (width: 100%) */
-    -webkit-transition: margin 150ms;
-    transition: margin 150ms;
+    -webkit-transition: margin 150ms !important;
+    transition: margin 150ms !important;
 }
 
 .scrollable-dropdown-menu__icon-container {
