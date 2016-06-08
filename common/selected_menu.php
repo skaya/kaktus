@@ -6,6 +6,6 @@ while ($row = $rows -> fetch_assoc()) {
    array_push($selected_menue, $row);
 }
 
-$smarty->assign('selected_menue',$selected_menue);
-$smarty->assign('selected_menue',$smarty->fetch('selected_menue.tpl'));
+$smarty->assign('article_menu',$selected_menue);
+$smarty->assign('article_menu',$smarty->fetch('article_menu.tpl'));
 ?>

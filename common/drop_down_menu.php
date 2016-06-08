@@ -23,7 +23,7 @@ function GetChild($id) {
 	return $a;
 }
 
-$smarty->assign('top_menue', $top_menue);
-$smarty->assign('drop_down_menue', $smarty->fetch('drop_down_menue.tpl'));
+$smarty->assign('drop_down_menu', $top_menue);
+$smarty->assign('drop_down_menu', $smarty->fetch('scrollable_dropdown_menu.tpl'));
 
 ?>

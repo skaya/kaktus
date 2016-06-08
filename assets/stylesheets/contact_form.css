@@ -1,13 +1,8 @@
-.contactForm {
-	overflow: hidden;
-	position: absolute;
-	z-index: 40;
-	top: 202px;
-	right: 0;
-	display: none;
+.contact-form {
+	position: relative;
 }
 
-.contactForm__toggle-link {
+.contact-form__toggle-link { /* link to show/hide contact form */
 	background-color: #000000;
 	color: #FFFFFF;
 	cursor: pointer;
@@ -15,7 +10,7 @@
 	float: right;
 }
 
-.contactForm__inner {
+.contact-form__inner {
 	width: 800px;
 	background-color: rgba(0, 0, 0, 0.6);
 	border-radius: 0 400px 0 400px;
@@ -25,16 +20,16 @@
 	right: -230px;
 }
 
-.contactForm__form {
+.contact-form__form {
 }
 
-.contactForm__required-label {
+.contact-form__required-label {
 	position: absolute;
 	top: 20px;
 	left: 30px;
 }
 
-.contactForm__btn {
+.contact-form__btn {
 	position: relative;
 	left: 95px;
 }

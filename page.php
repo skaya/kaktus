@@ -10,8 +10,6 @@ if (isset($_REQUEST['issue_id']) && $_REQUEST['issue_id'] != '') {
 
 $page = $page_row -> fetch_assoc();
 $smarty->assign('page', $page);
-$smarty->assign('title', $page['title']);
-$smarty->assign('text', $page['content']);
 $parent_id=$page['parent_id'];
 
 $smarty->assign('contact_form',$smarty->fetch('contact_form.tpl'));

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Профессиональный фотограф Konopatskaya Yuliya (KAKTUS)</title>
+    <title>{$page.title}</title>
     <meta name="description" content="{$page.meta_descr}"/>
     <meta name="keywords" content="{$page.keywords}"/>
 
@@ -15,14 +15,13 @@
     <script type="text/javascript" src="assets/javascripts/galleryNavigate.js"></script>
     <script type="text/javascript" src="assets/javascripts/layout.js"></script>
 
+    <link rel="Stylesheet" type="text/css" href="assets/stylesheets/layout.css" />
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/form.css" />
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/contactForm.css" />
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/textContent.css" />
-
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/sidebarNavigation.css" />
-    <link rel="Stylesheet" type="text/css" href="assets/stylesheets/menuPhotoAnimate.css" />
-    <link rel="Stylesheet" type="text/css" href="assets/stylesheets/all.css" />
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/contact_form.css" />
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/article_menu.css" />
+    <link rel="Stylesheet" type="text/css" href="assets/stylesheets/scrollable_dropdown_menu.css" />
 
     <!--[if lte IE 8]>
     	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css" />
@@ -34,23 +33,27 @@
 <div id="loading_page"></div>
 <div id="bg-img">
     <div class="top-navigation">
-	   {include file="drop_down_menue.tpl"}
+        {$drop_down_menu}
     </div>
 
-    <div class="textContent content">
-        <div class="textContent__inner">
-            <h2>{$title}</h2>
-            {$text}
-	    </div>
+    <div class="text-conteiner">
+        <div class="text-conteiner__inner">
+            <h2>{$page.title}</h2>
+            {$page.content}
+        </div>
     </div>
 
     <div class="sidebar-navigation">
-        {$selected_menue}
+        {$article_menu}
     </div>
 
-    {$contact_form}
+    <div class="sidebar-contact-form">
+        {$contact_form}
+    </div>
 
-    <div id="copyright">{$extra.footer}</div>
+    <div class="copyright">{
+        $extra.footer}
+    </div>
 </div>
 
 </body>

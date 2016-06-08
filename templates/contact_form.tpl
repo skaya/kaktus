@@ -1,7 +1,7 @@
-<div class="contactForm">
-	<div class="contactForm__inner clearfix">
-		<form id="contact-form" class="contactForm__form" name="add_msg" method="post" action="contact.php">
-			<span class="required-label contactForm__required-label">*all field are required</span>
+<div class="contact-form">
+	<div class="contact-form__inner clearfix">
+		<form id="contact-form" class="contact-form__form" name="add_msg" method="post" action="contact.php">
+			<span class="required-label contact-form__required-label">*all field are required</span>
 			<div class="messages error {if $success==1}success{/if}">
 				{section loop=$errors name="m"}
 					<div class="message_error">
@@ -28,9 +28,9 @@
 				<input type="text" class="input-inline input-short" id="captcha" name="captcha" value="{$captcha}"/>
 			</div>
 			<div class="form-field">
-				<input type="submit" class="form-button contactForm__btn"/>
+				<input type="submit" class="form-button contact-form__btn"/>
 			</div>
 		</form>
 	</div>
-	<div class="contactForm__toggle-link">CONTACT</div>
+	<div class="contact-form__toggle-link">CONTACT</div>
 </div>

@@ -1,0 +1,138 @@
+﻿.scrollable-dropdown-menu {
+    height: 50px;
+    padding: 0 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0 50px;
+    position: relative;
+    z-index: 50;
+}
+
+.scrollable-dropdown-menu__item {
+    float: left;
+    clear: none;
+    width: 25%;
+    height: 50px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    text-align: center;
+    list-style: none;
+    color: #33cc66;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.scrollable-dropdown-menu__dropdown-container {
+    position: relative;
+    z-index: 45;
+    margin-top: -35px; /* it's menu width. it's needed to start droping down from begining of a page */
+    /*add shadow*/
+    background: url(../images/bg-photos-sm.png) repeat-y center;
+    width: auto !important;
+    display: block !important;
+}
+
+.scrollable-dropdown-menu__dropdown-container:hover {
+    z-index: 50;
+}
+
+.scrollable-dropdown-menu__dropdown-container:before { /* area for top scrolling on hover action */
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 300;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    border: 1px solid red;
+}
+
+.scrollable-dropdown-menu__scrollable-wrapper {
+    position: relative;
+    overflow: visible;
+    z-index: 30;
+}
+
+.scrollable-dropdown-menu__scrollable-item {
+    position: relative;
+    width: auto !important;
+    margin: 0 15px; /* it's needed to scaling effect without shifting and else.
+                        the margin will be removed during animation.
+                        the image width will be increased because of it has 100% width  */
+}
+
+.scrollable-dropdown-menu__scrollable-item:hover {
+    margin: 0; /* smooth removing of margins for smooth increasing of width (width: 100%) */
+    -webkit-transition: margin 150ms;
+    transition: margin 150ms;
+}
+
+.scrollable-dropdown-menu__icon-container {
+    display: block;
+    width: auto !important;
+    height: auto !important;
+}
+
+.scrollable-dropdown-menu__icon-container:before {
+    position: absolute;
+    z-index: 22;
+    /*add shadow*/
+    background: url(../images/bg-photo-sm-180px.png) repeat-y;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.scrollable-dropdown-menu__scrollable-item:hover .scrollable-dropdown-menu__icon-container:before {
+    display: none;
+}
+
+.scrollable-dropdown-menu__icon-img {
+    width: 100%;
+    position: relative;
+    z-index: 21;
+    display: block;
+}
+
+.scrollable-dropdown-menu__text-container {
+    position: absolute;
+    overflow: visible;
+    z-index: 19;
+    top: 0px;
+    left: 100%;
+    height: 100%;
+    width: 0;
+    background: #000;
+}
+
+.scrollable-dropdown-menu__text-container div {
+    margin: 20px 20px 0;
+    padding: 3px 10px;
+    text-align: left;
+    font-size: 12px;
+    color: #33CC66;
+    border-left: 5px solid #33CC66;
+    text-transform: none;
+    font-family: Helvetica;
+    display: block !important;
+    opacity: 0;
+}
+
+.scrollable-dropdown-menu__scrollable-item:hover .scrollable-dropdown-menu__text-container {
+    width: 120% !important;
+    -webkit-transition: width 250ms;
+    transition: width 250ms;
+}
+
+.scrollable-dropdown-menu__scrollable-item:hover .scrollable-dropdown-menu__text {
+    opacity: 1;
+    -webkit-transition: opacity 0s linear 300ms; /* delay time to show text when container is extended (to avoid extending of the text)*/
+    transition: opacity 0s linear 300ms;
+}
+
+.scrollable-dropdown-menu__text h4 {text-transform: uppercase; margin-bottom: 5px; line-height: 1.1;}
+.scrollable-dropdown-menu__text h4 small {text-transform: lowercase;}
+.scrollable-dropdown-menu__text p {margin-bottom: 5px;}
+
