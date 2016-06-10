@@ -14,23 +14,22 @@
 
   $DB->query ('set names utf8');
 
-  define('SMARTY_DIR', $root_abs.'libs/smarty/');
+  ini_set('display_errors', 1);
+  //ini_set('display_startup_errors', 1);
+  error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+  define('SMARTY_DIR', $root_abs.'libs/');
   require_once(SMARTY_DIR.'Smarty.class.php');
 
   session_start();
 
   /** Smarty configuration */
   $smarty = new Smarty();
-
-  $smarty->debugging = false;
+  $smarty->$compile_dir = $root_abs.'libs/templates_c/';
   $smarty->force_compile = true;
   $smarty->caching = false;
-  $smarty->compile_check = true;
   $smarty->cache_lifetime = -1;
-  $smarty->plugins_dir = array(
-    SMARTY_DIR . 'plugins',
-    $root_abs.'libs/plugins');
-
+  $smarty->debugging = true;
 
   $smarty->assign("root", $root);
 

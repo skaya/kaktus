@@ -14,5 +14,4 @@ $parent_id=$page['parent_id'];
 
 $smarty->assign('contact_form',$smarty->fetch('contact_form.tpl'));
 $smarty->display('page.tpl');
-
 ?>
