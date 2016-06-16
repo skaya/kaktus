@@ -25,7 +25,6 @@
 
   /** Smarty configuration */
   $smarty = new Smarty();
-  $smarty->$compile_dir = $root_abs.'libs/templates_c/';
   $smarty->force_compile = true;
   $smarty->caching = false;
   $smarty->cache_lifetime = -1;

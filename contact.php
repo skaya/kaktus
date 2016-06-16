@@ -1,21 +1,18 @@
 <?php
+
 $success = 0;
 $errors = array();
 $fields = ['name', 'email', 'message'];
 
 foreach ($fields as $field) {
-	$_REQUEST[$field] = trim($_REQUEST[$field]);
-	if ($_REQUEST[$field] == '') {
+	$_POST[$field] = trim($_POST[$field]);
+	if ($_POST[$field] == '') {
 		array_push($errors, "Enter your ".$field);
 	}
 }
 
-if (!ereg(".+@.+\..+", $_REQUEST['email']) &&  $_REQUEST['email']!='') {
+if (!ereg(".+@.+\..+", $_POST['email']) &&  $_POST['email']!='') {
 	array_push($errors, 'Enter valid e-mail');
-}
-
-if($_SESSION['string'] != md5($_REQUEST['captcha'])) {
-	array_push($errors, 'The captcha is not valid');
 }
 
 //==============Sending message to email===================
@@ -36,18 +33,11 @@ if (count($errors)==0) {
 	$message = file_get_contents('templates/email.html');
 
 	mail($to, $subject, $message, $headers);
-
-	foreach ($fields as $field) {
-		$_REQUEST[$field] = '';
-	}
 }
 
-$smarty->assign('errors', $errors);
-$smarty->assign('success', $success);
-$smarty->assign('name', $_REQUEST['name']);
-$smarty->assign('email', $_REQUEST['email']);
-$smarty->assign('message', $_REQUEST['message']);
+$response = array();
+$response["success"] = $success;
+$response["errors"] = $errors;
+echo json_encode($response);
+header('Content-Type: application/json');
 
-$smarty->assign('contact', $smarty->fetch('contact_form.tpl'));
-
-?>

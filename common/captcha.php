@@ -3,21 +3,21 @@ session_start();
 
 srand();
 $try=makerandom(4,6);
-$_SESSION['string']=md5($try);
+$_SESSION['captcha-img']=md5($try);
 onrefresh($try);
 
 function makerandom($minlength, $maxlength) {
-	$characters = "0123456789"; 
+	$characters = "0123456789";
  	if ($minlength > $maxlength) {
-		$length = rand ($maxlength, $minlength); 
+		$length = rand ($maxlength, $minlength);
 	} else {
-		$length = rand ($minlength, $maxlength); 
+		$length = rand ($minlength, $maxlength);
 	}
 	$totallen=strlen($characters)-1;
 	for ($i=0; $i<$length; $i++) {
-	    $result=$result.$characters[rand(0,$totallen)]; 
+	    $result=$result.$characters[rand(0,$totallen)];
     }
-    return $result; 
+    return $result;
 }
 
 function onrefresh($str) {
@@ -26,7 +26,7 @@ function onrefresh($str) {
     $back = imagecolorallocate($image, 0, 0, 0);
     $border = imagecolorallocate($image, 255, 255, 255);
     imagefilledrectangle($image, 0, 0, 99,29, $border);
-    
+
     imagerectangle($image, 0, 0,99,29, $back);
     $textcolor=imagecolorallocate($image,45,59,34);
     $setkacolor=imagecolorallocate($image,200,200,200);

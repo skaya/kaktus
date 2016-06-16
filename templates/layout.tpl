@@ -13,6 +13,7 @@
     <script type="text/javascript" src="assets/javascripts/menuPhotoAnimate.js" ></script> <!-- for animate menu photo -->
     <script type="text/javascript" src="assets/javascripts/galleryNavigate.js"></script>
     <script type="text/javascript" src="assets/javascripts/layout.js"></script>
+    <script type="text/javascript" src="assets/javascripts/contactForm.js"></script>
 
     <link rel="Stylesheet" type="text/css" href="assets/stylesheets/layout.css" />
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/form.css" />

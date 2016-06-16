@@ -1,5 +1,5 @@
-{extends file="layout"}
-<block name=content>
+{extends file='layout.tpl'}
+{block name=content}
     <div id="fp_gallery">
         <div id="fp_exit" class="fp_exit"></div>
         <div id="fp_next" class="fp_next"></div>
@@ -27,4 +27,4 @@
             </div>
         </div>
     </div>
-</block>
+{/block}
